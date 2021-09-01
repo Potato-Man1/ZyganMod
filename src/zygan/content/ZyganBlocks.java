@@ -31,7 +31,7 @@ public class ZyganBlocks implements ContentList {
                 Items.pyratite, Bullets.standardIncendiary,
                 Items.silicon, Bullets.standardHoming
             );
-
+	    size = 3
             spread = 1f;
             shots = 5;
             alternate = true;
@@ -44,5 +44,38 @@ public class ZyganBlocks implements ContentList {
             inaccuracy = 0.0001f;
             rotateSpeed = 25f;
         }};
+	    
+	lancer = new PowerTurret("lancer"){{
+            requirements(Category.turret, with(Items.copper, 60, Items.lead, 70, Items.silicon, 50));
+            range = 165f;
+            chargeTime = 20f;
+            chargeMaxDelay = 15f;
+            chargeEffects = 7;
+            recoilAmount = 0.1f;
+            reloadTime = 40f;
+            cooldown = 0.03f;
+            powerUse = 6f;
+            shootShake = 2f;
+            shootEffect = Fx.lancerLaserShoot;
+            smokeEffect = Fx.none;
+            chargeEffect = Fx.lancerLaserCharge;
+            chargeBeginEffect = Fx.lancerLaserChargeBegin;
+            heatColor = Color.blue;
+            size = 2;
+            health = 280 * size * size;
+            targetAir = false;
+            shootSound = Sounds.laser;
+
+            shootType = new LaserBulletType(140){{
+                colors = new Color[]{Pal.lancerLaser.cpy().a(0.4f), Pal.lancerLaser, Color.white};
+                hitEffect = Fx.hitLancer;
+                hitSize = 2;
+                lifetime = 16f;
+                drawSize = 400f;
+                collidesAir = true;
+                length = 300f;
+                ammoMultiplier = 1f;
+            }};
+        }}; 
     }
 }
