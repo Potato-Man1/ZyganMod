@@ -44,7 +44,7 @@ public class ZyganBlocks implements ContentList {
             rotateSpeed = 25f;
         }};
 	    
-	Repeater = new PowerTurret("Repeater"){{
+	repeater = new PowerTurret("Repeater"){{
             requirements(Category.turret, with(Items.copper, 60, Items.lead, 70, Items.silicon, 50));
             range = 165f;
             chargeTime = 2f;
