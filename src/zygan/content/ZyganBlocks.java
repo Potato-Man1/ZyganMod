@@ -18,7 +18,7 @@ import mindustry.world.meta.*;
 import static mindustry.type.ItemStack.with;
 
 public class ZyganBlocks implements ContentList {
-	public static Block ultimateduo;
+	public static Block ultimateduo, makria;
 
 	@Override
     public void load(){
