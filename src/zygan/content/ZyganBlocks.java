@@ -31,7 +31,7 @@ public class ZyganBlocks implements ContentList {
                 Items.pyratite, Bullets.standardIncendiary,
                 Items.silicon, Bullets.standardHoming
             );
-	    size = 3
+	    size = 2;
             spread = 1f;
             shots = 5;
             alternate = true;
