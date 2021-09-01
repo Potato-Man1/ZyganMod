@@ -43,8 +43,6 @@ public class ZyganBlocks implements ContentList {
             health = 500;
             inaccuracy = 0.0001f;
             rotateSpeed = 25f;
-
-            limitRange();
         }};
     }
 }
