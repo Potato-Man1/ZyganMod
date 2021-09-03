@@ -8,8 +8,8 @@ import static mindustry.Vars.*;
 
 public class ZyganMod extends Mod{
     public final ContentList[] zyganContent = {
-		new ZyganBlocks();
-	    	new ZyganBullets();
+		new ZyganBlocks(),
+	    	new ZyganBullets()
 	};
 
     @Override
