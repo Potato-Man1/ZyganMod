@@ -1,4 +1,4 @@
-package zygan.content
+package zygan.content;
 
 import arc.*;
 import arc.graphics.*;
