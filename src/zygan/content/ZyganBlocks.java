@@ -48,7 +48,7 @@ public class ZyganBlocks implements ContentList {
 	    
        makria = new ItemTurret("makria"){{
 	    requirements(Category.turret, with(Items.copper, 35), true);
-	    shootType = makriaBullet(10f)
+	    shootType = makriaBullet(10f);
 	    spread = 1f;
             shots = 1;
             alternate = true;
