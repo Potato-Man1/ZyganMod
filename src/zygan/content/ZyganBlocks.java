@@ -15,6 +15,8 @@ import mindustry.world.blocks.logic.*;
 import mindustry.world.blocks.storage.*;
 import mindustry.world.meta.*;
 
+import zygan.content.*;
+
 import static mindustry.type.ItemStack.with;
 
 public class ZyganBlocks implements ContentList {
@@ -46,12 +48,7 @@ public class ZyganBlocks implements ContentList {
 	    
        makria = new ItemTurret("makria"){{
 	    requirements(Category.turret, with(Items.copper, 35), true);
-	    ammo(
-                Items.copper, Bullets.standardCopper,
-                Items.graphite, Bullets.standardDense,
-                Items.pyratite, Bullets.standardIncendiary,
-                Items.silicon, Bullets.standardHoming
-            );
+	    shootType = makriaBullet(10f)
 	    spread = 1f;
             shots = 1;
             alternate = true;
