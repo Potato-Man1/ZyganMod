@@ -18,7 +18,7 @@ import mindustry.world.meta.*;
 import static mindustry.type.ItemStack.with;
 
 public class ZyganBlocks implements ContentList {
-	public static Block ultimateduo, makria;
+	public static Block ultimateduo, makria, burst;
 
 	@Override
     public void load(){
@@ -63,6 +63,30 @@ public class ZyganBlocks implements ContentList {
             health = 200;
             inaccuracy = 0.0001f;
             rotateSpeed = 5f;
+        }};
+	    
+       burst = new ItemTurret("burst"){{
+            requirements(Category.turret, with(Items.copper, 100, Items.graphite, 80, Items.titanium, 50));
+            ammo(
+                Items.pyratite, Bullets.standardIncendiary,
+                Items.silicon, Bullets.standardHoming,
+                Items.thorium, Bullets.standardThorium
+            );
+
+            size = 2;
+            range = 190f;
+            reloadTime = 0.0001f;
+            restitution = 0.03f;
+            ammoEjectBack = 3f;
+            cooldown = 0f;
+            recoilAmount = 3f;
+            shootShake = 1f;
+            burstSpacing = 3f;
+            shots = 4;
+            ammoUseEffect = Fx.casing2;
+            health = 240 * size * size;
+            shootSound = Sounds.shootBig;
+	    
         }};
     }
 }
