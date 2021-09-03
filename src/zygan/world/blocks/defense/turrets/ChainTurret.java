@@ -4,6 +4,7 @@ import arc.struct.*;
 import mindustry.entities.bullet.*;
 import mindustry.logic.*;
 import mindustry.world.meta.*;
+import mindustry.world.blocks.defense.turrets.*;
 
 public class ChainTurret extends Turret{
     public BulletType shootType;
