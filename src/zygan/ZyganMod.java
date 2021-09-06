@@ -7,19 +7,11 @@ import mindustry.mod.*;
 import static mindustry.Vars.*;
 
 public class ZyganMod extends Mod{
-    public final ContentList[] zyganContent = {
-		new ZyganBlocks(),
-	    	new ZyganBullets()
-	};
-
-    @Override
-    public void init(){
-    }
-
-    @Override
-    public void loadContent(){
-        for(ContentList list : zyganContent){
-            list.load();
-        }
-    }
+	public ZyganMod(){}
+	
+	@Override
+	public void loadcontent(){
+		new ZyganBlocks.load()
+		new ZyganBullets.load()
+	}
 }
