@@ -6,10 +6,15 @@ import arc.math.*;
 import mindustry.ctype.*;
 import mindustry.game.*;
 import mindustry.game.EventType.*;
+import mindustry.entities.*;
+import mindustry.entities.bullet.*;
+import mindustry.io.*;
+import mindustry.world.*;
+import mindustry.content.*;
 import mindustry.type.*;
 import mindustry.graphics.*;
 
-import static mindustry.Vars.world;
+import static mindustry.Vars.*;
 
 public class ZyganBullets implements ContentList{
     public static BulletType makriaBullet;
