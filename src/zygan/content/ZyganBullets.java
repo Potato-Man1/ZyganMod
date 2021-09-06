@@ -21,7 +21,7 @@ public class ZyganBullets implements ContentList{
   
     @Override
     public void load(){
-        makriaBullet = new ArtilleyBulletType(2f, 10, "shell"){{
+        makriaBullet = new ArtilleryBulletType(2f, 10, "shell"){{
             hitEffect = Fx.flakExplosion;
             knockback = 0.8f;
             lifetime = 75f;
