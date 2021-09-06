@@ -17,7 +17,7 @@ public class ZyganMod extends Mod{
 	public ZyganMod(){}
 	
 	@Override
-	public void loadcontent(){
+	public void loadContent(){
 		new ZyganBlocks.load();
 		new ZyganBullets.load();
 	}
